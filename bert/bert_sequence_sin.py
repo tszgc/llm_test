@@ -76,7 +76,7 @@ def load_sin_sure_data(data_path, train_ratio=0.8):
             # value指sin的值
             key, value = sample.strip().split("\t")
             categories.add(value)
-            all_data.append((value, key))
+            all_data.append((key, value))
     length = len(all_data)
     train_len = int(length * train_ratio)
     train_data = all_data[:train_len]
